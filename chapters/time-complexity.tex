@@ -1,0 +1,31 @@
+\chapter{Time Complexity}
+
+(Copied from Wikipedia)
+
+In computer science, the time complexity is the computational complexity that describes the amount of computer time it takes to run an algorithm. Time complexity is commonly estimated by counting the number of elementary operations performed by the algorithm, supposing that each elementary operation takes a fixed amount of time to perform. Thus, the amount of time taken and the number of elementary operations performed by the algorithm are taken to differ by at most a constant factor.
+
+Since an algorithm's running time may vary among different inputs of the same size, one commonly considers the worst-case time complexity, which is the maximum amount of time required for inputs of a given size. Less common, and usually specified explicitly, is the average-case complexity, which is the average of the time taken on inputs of a given size (this makes sense because there are only a finite number of possible inputs of a given size). In both cases, the time complexity is generally expressed as a function of the size of the input. Since this function is generally difficult to compute exactly, and the running time for small inputs is usually not consequential, one commonly focuses on the behavior of the complexity when the input size increases—that is, the asymptotic behavior of the complexity. Therefore, the time complexity is commonly expressed using big O notation, typically $O(n), O(n\log n), O(n^{\alpha }), O(2^{n})$, etc., where $n$ is the input size in units of bits needed to represent the input.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{chapters/graphs/1024px-Comparison_computational_complexity.svg.png}
+    \caption{Graphs of functions commonly used in the analysis of algorithms, showing the number of operations $N$ versus input size $n$ for each function}
+\end{figure}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Algorithm & Worst-case time complexity \\
+        \hline
+        Merge Sort & $O(n log n)$ \\
+        \hline
+        Bubble Sort & $O(n^2)$ \\
+        \hline
+        Insertion Sort & $O(n^2)$ \\
+        \hline
+        Counting Sort & $O(n)$ \\
+        \hline
+    \end{tabular}
+    \caption{Worst case time complexities of algorithms}
+\end{table}

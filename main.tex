@@ -1,0 +1,54 @@
+\documentclass[12pt,twoside]{report}
+
+\usepackage[a4paper,top=25mm,bottom=25mm,inner=35mm,outer=25mm]{geometry}
+
+\include{includes}
+
+\newcommand{\thetitle}{Titre}
+\newcommand{\theauthor}{Charbel-Raphaël Segerie}
+
+\newcommand{\degree}{MVA Research Internship}
+\newcommand{\program}{Cognitive Neuroscience - MVA}
+\newcommand{\department}{Department of Chemistry}
+
+\newcommand{\institute}{Inria Parietal / Neurospin}
+
+\newcommand{\institutecity}{ENS Paris-Saclay / Ecole des Ponts ParisTech}
+
+%\newcommand{\institutewithaddress}{Indian Institute Of Technology \\ (Banaras Hindu University) \\ Varanasi – 221 005}
+
+\newcommand{\supervisor}{Richard Hoechenberger, Sophie Herbst, Alexandre Gramfort}
+\newcommand{\supervisoraffiliation}{\department{} \\ \institutewithaddress{}}
+
+\newcommand{\cosupervisor}{}
+\newcommand{\cosupervisoraffiliation}{}
+
+\newcommand{\extsupervisor}{}
+\newcommand{\extsupervisoraffiliation}{}
+
+\newcommand{\projectstart}{January 2020}
+\newcommand{\projectend}{May 2021}
+
+\newcommand{\rollno}{12345678}
+
+\begin{document}
+\pagenumbering{roman}
+
+% preliminaries
+\input{preliminaries/title}
+\input{preliminaries/prelude}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{preliminaries/presentations}
+
+\pagenumbering{arabic}
+
+% chapters
+\input{chapters/tutorial}
+\input{chapters/time-complexity}
+
+
+\input{preliminaries/conclusion}
+\printbibliography[title=References]
+\end{document}
